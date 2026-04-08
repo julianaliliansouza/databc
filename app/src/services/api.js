@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://api.databc.com.br/api',
+  baseURL: 'https://databc-cors.julianalilian-souza.workers.dev/api',
   headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
 })
 
