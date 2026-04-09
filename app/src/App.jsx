@@ -3,6 +3,7 @@ import { AuthProvider, useAuth } from './context/AuthContext'
 import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import BrandProfile from './pages/BrandProfile'
+import CriarComIA from './pages/CriarComIA'
 
 function PrivateRoute({ children }) {
   const { usuario, loading } = useAuth()
@@ -18,6 +19,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
           <Route path="/brand-profile" element={<PrivateRoute><BrandProfile /></PrivateRoute>} />
+          <Route path="/criar" element={<PrivateRoute><CriarComIA /></PrivateRoute>} />
           <Route path="/" element={<Navigate to="/dashboard" />} />
         </Routes>
       </BrowserRouter>
