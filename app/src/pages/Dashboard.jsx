@@ -35,6 +35,7 @@ export default function Dashboard() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {[
               { label: 'Banco de Imagens', icon: '🖼️', href: '/banco' },
+              { label: 'DNA da Marca', icon: '🧠', href: '/brand-profile' },
               { label: 'Criar com IA', icon: '✨', href: '/criar' },
               { label: 'Editor', icon: '🎨', href: '/editor' },
               { label: 'Calendário', icon: '📅', href: '/calendario' },
