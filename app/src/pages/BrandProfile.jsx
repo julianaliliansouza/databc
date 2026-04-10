@@ -97,7 +97,7 @@ export default function BrandProfile() {
     try {
       const toArray = (str) => str ? str.split(",").map(s => s.trim()).filter(Boolean) : []
       const toArrayLines = (str) => str ? str.split("\n").map(s => s.trim()).filter(Boolean) : []
-      await api.post("/brand-profile", {
+      await api.post("/brand-profile/salvar", {
         missao:             form.missao,
         visao:              form.visao,
         valores:            form.valores,
